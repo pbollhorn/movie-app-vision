@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import Navbar from "./Navbar.jsx";
 
 export default function Menu() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuIsOpen((prev) => !prev);
+  };
+
   return (
     <div id="menu">
       <div id="header">
@@ -8,15 +15,14 @@ export default function Menu() {
           <h1>Movie App Vision</h1>
         </div>
         <div>
-          <button id="burgerButton">☰</button>
+          <button id="burgerButton" onClick={toggleMenu}>
+            ☰
+          </button>
         </div>
       </div>
 
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/vision">Vision</Link>
-        <Link to="/endpoints">Endpoints</Link>
-      </nav>
+      {/* Only show Navbar if menuIsOpen is true */}
+      {menuIsOpen && <Navbar />}
     </div>
   );
 }
