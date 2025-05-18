@@ -2,16 +2,16 @@
 :root {
   --menu-bg: lightgray;
   --menu-fg: black;
-  --page-bg: white;
-  --page-fg: black;
+  --outlet-bg: white;
+  --outlet-fg: black;
 }
 
 /* Dark mode (triggered by .dark class on body)*/
 body.dark {
   --menu-bg: black;
   --menu-fg: white;
-  --page-bg: darkgray;
-  --page-fg: white;
+  --outlet-bg: darkgray;
+  --outlet-fg: white;
 }
 
 #menu {
@@ -20,6 +20,6 @@ body.dark {
 }
 
 #outlet {
-  background-color: var(--page-bg);
-  color: var(--page-fg);
+  background-color: var(--outlet-bg);
+  color: var(--outlet-fg);
 }
