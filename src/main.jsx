@@ -6,7 +6,8 @@ import Home from "./pages/Home.jsx";
 import Vision from "./pages/Vision.jsx";
 import Endpoints from "./pages/Endpoints.jsx";
 import { ThemeProvider } from "./ThemeContext";
-import "./global.css";
+import "./global-theme.css";
+import "./global-layout.css";
 
 const router = createBrowserRouter([
   {

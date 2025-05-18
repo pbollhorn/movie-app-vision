@@ -1,0 +1,20 @@
+/* Default: Mobile layout (Menu on top) */
+.app {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  /* position: relative; */
+}
+
+#burgerButton {
+}
+
+/* Desktop layout (Menu on the side) */
+@media (min-width: 768px) {
+  .app {
+    flex-direction: row;
+  }
+  #burgerButton {
+    display: none;
+  }
+}
