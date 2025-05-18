@@ -6,8 +6,8 @@ import Menu from "./Menu.jsx";
 function App() {
   return (
     <div className="app">
-      <Menu />
-      <Outlet />
+      <Menu id="menu"/>
+      <Outlet id="outlet"/>
     </div>
   );
 }
