@@ -18,6 +18,8 @@ body,
 
 #burgerButton {
 }
+#burgerNavbar {
+}
 
 #menu {
   width: 100%;
@@ -45,6 +47,9 @@ body,
     overflow-y: auto; /* Enable vertical scrolling */
   }
   #burgerButton {
+    display: none;
+  }
+  #burgerNavbar {
     display: none;
   }
 }

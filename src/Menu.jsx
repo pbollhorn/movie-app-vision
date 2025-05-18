@@ -22,7 +22,7 @@ export default function Menu() {
       </div>
 
       {/* Only show Navbar if menuIsOpen is true */}
-      {menuIsOpen && <Navbar />}
+      {menuIsOpen && <Navbar id="burgerNavbar"/>}
     </div>
   );
 }
